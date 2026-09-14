@@ -53,3 +53,26 @@ Perintah Kerja Remote:
 -> git push -u origin main: Mengunggah (upload) seluruh commit dari branch lokal ke GitHub (opsi -u membuat Git mengingat tujuan branch untuk perintah push berikutnya).
 -> git fetch <remote>: Mengunduh data perubahan terbaru dari remote ke lokal.
 -> git pull: Mengunduh sekaligus menggabungkan perubahan remote langsung ke branch lokal yang aktif.
+
+Format Dokumen Markdown
+-> Markdown adalah format teks polos dengan sintaks sederhana yang paling banyak digunakan programmer untuk membuat dokumentasi, file README.md, maupun postingan forum.
+
+Sintaks dasar Markdown meliputi:
+-> Judul (Heading): Menggunakan tanda pagar # (1 sampai 6 tanda pagar menentukan level/ukuran judul).
+
+Gaya Teks:
+-> (**teks** untuk Tebal)
+-> (*teks* untuk Miring)
+-> (~~teks~~ untuk ~~Dicoret~~)
+
+Daftar (List):
+-> Ordered List: Dimulai dengan angka, titik, dan spasi (misal: 1. , 2. ).
+-> Unordered List: Dimulai dengan tanda hubung dan spasi (- ).
+
+Link & Gambar:
+-> Link: [Teks Link](url).
+-> Gambar: ![Alt Text](url-gambar).
+
+Tabel: Disusun menggunakan garis vertikal | untuk kolom dan strip - untuk baris pemisah judul tabel.
+
+Blok Kode (Source Code): Menggunakan tiga tanda backtick (```) disertai nama bahasa pemrograman di awal bloknya.
