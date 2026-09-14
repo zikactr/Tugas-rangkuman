@@ -19,3 +19,37 @@ Pengaturan Git tersimpan di 3 tempat:
 -> Sistem (--system): Berlaku untuk semua pengguna di komputer.
 -> Global (--global): Berlaku untuk pengguna yang sedang aktif (paling sering dipakai).
 -> Lokal (--local): Hanya berlaku khusus untuk satu repositori tertentu.
+
+Dasar-Dasar Git: Siklus File & Commit
+-> Repository (Repo): Kumpulan file proyek beserta catatan riwayat perubahannya. Untuk membuatnya, jalankan git init di folder proyek (akan membuat folder tersembunyi .git) atau git clone <url> untuk menduplikasi repo yang sudah ada.
+-> Commit: Snapshot atau rekaman keadaan repositori pada titik waktu tertentu.
+
+Dalam Git, file memiliki 4 siklus status:
+-> Untracked: File baru di dalam folder yang belum pernah dilacak oleh Git.
+-> Staged: File yang perubahannya sudah ditandai untuk dimasukkan ke dalam commit berikutnya.
+-> Unmodified: File yang sudah di-commit dan belum ada perubahan baru lagi.
+-> Modified: File yang sudah terlacak, tetapi kodenya diedit kembali.
+
+Perintah dasar yang sering dipakai:
+-> git status: Mengecek status file di repositori dan staging area.
+-> git add <file>: Memindahkan file ke staging area (misal: git add . untuk menambahkan semua file di folder).
+-> .gitignore: File teks khusus untuk mendaftarkan nama file atau folder yang sengaja diabaikan agar tidak terlacak oleh Git (seperti node_modules atau file kredensial rahasia).
+-> git commit -m "pesan": Menyimpan snapshot perubahan permanen beserta pesan deskripsinya.
+-> git log: Menampilkan daftar riwayat commit yang sudah dibuat.
+
+Membatalkan Perubahan:
+-> git reset: Membatalkan file dari staging area.
+-> git reset HEAD~1: Membatalkan commit terakhir tapi perubahan file tetap ada.
+-> git reset --hard HEAD~1: Membatalkan commit terakhir sekaligus menghapus seluruh perubahannya (kembali total ke versi sebelumnya).
+
+Menggunakan Remote & GitHub
+-> Remote Repository: Salinan repositori yang disimpan di lokasi lain, baik itu folder lain di komputer maupun layanan cloud seperti GitHub atau GitLab.
+-> GitHub: Platform berbasis web untuk meng-hosting repositori Git secara daring agar mudah berkolaborasi.
+-> Peran File README: Dokumen awal yang pertama kali dilihat pengunjung repositori. Isinya menjelaskan gambaran proyek, manfaat, petunjuk cara menjalankan aplikasi, serta kontributor.
+
+Perintah Kerja Remote:
+-> git remote -v: Menampilkan daftar alamat remote yang terhubung.
+-> git remote add origin <url>: Menautkan repo lokal dengan repo di GitHub menggunakan label alias (biasanya origin).
+-> git push -u origin main: Mengunggah (upload) seluruh commit dari branch lokal ke GitHub (opsi -u membuat Git mengingat tujuan branch untuk perintah push berikutnya).
+-> git fetch <remote>: Mengunduh data perubahan terbaru dari remote ke lokal.
+-> git pull: Mengunduh sekaligus menggabungkan perubahan remote langsung ke branch lokal yang aktif.
