@@ -1,0 +1,21 @@
+Pengertian Version Control :
+-> Praktik untuk melacak dan mengelola setiap perubahan pada file dari waktu ke waktu. Kebutuhan ini sangat penting dalam pengembangan perangkat lunak (software development) agar perubahan kode tidak berantakan.
+
+Version Control System : 
+3 Jenis VCS:
+- VCS Lokal: Menggunakan basis data sederhana di komputer lokal untuk mencatat histori perubahan file (contoh: RCS, 1982).
+- VCS Terpusat (Client-Server): Menyimpan riwayat perubahan di satu server pusat agar beberapa developer bisa bekerja bersama (contoh: CVS, Subversion). Kelemahannya: jika server rusak, seluruh proyek bisa hilang, dan kontributor harus selalu terhubung ke server.
+- VCS Terdistribusi (Peer-to-Peer): Setiap komputer client memegang salinan lengkap dari repositori beserta riwayatnya (contoh: Git, Mercurial). Jika server bermasalah, repositori di salah satu client bisa disalin kembali ke server untuk memulihkannya.
+
+Mengenal Git & Kegunaannya
+-> Git adalah sistem VCS terdistribusi gratis dan open source yang paling populer digunakan saat ini.
+-> Pelacakan Riwayat Perubahan: Memudahkan melihat siapa yang mengubah, kapan diubah, alasan perubahan, serta mudah kembali ke versi sebelumnya.
+-> Kolaborasi Jarak Jauh: Membantu tim mengerjakan proyek bersama tanpa takut kode saling menimpa.
+-> Branching dan Merging: Memungkinkan pembuatan cabang (branch) terpisah untuk uji coba fitur atau perbaikan tanpa mengganggu alur kode utama, lalu menggabungkannya kembali (merging).
+
+Konfigurasi Git (Git Config)
+
+Pengaturan Git tersimpan di 3 tempat:
+-> Sistem (--system): Berlaku untuk semua pengguna di komputer.
+-> Global (--global): Berlaku untuk pengguna yang sedang aktif (paling sering dipakai).
+-> Lokal (--local): Hanya berlaku khusus untuk satu repositori tertentu.
